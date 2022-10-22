@@ -8,10 +8,16 @@
 import UIKit
 
 class HeaderCollectionViewCell: UICollectionViewCell {
-
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var bottomView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        config()
     }
 
+    func config(){
+        bottomView.isHidden = true
+    }
 }
